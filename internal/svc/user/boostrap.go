@@ -15,7 +15,8 @@ type service struct {
 func NewUserService(cnf Config) service {
 	// Here we initialize and inject everything.
 	// Note all the dependencies of the service which are required by
-	// individual components of the service, such as injecting DB into repository ect.
+	// individual components of the service, such as injecting DB into repository ect.,
+	// are injected in this part as well.
 	// We only want to export the API of the service and nothing else.
 	return service{}
 }
